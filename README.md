@@ -239,24 +239,3 @@ To persist this `LC_*` variable binding, edit your `locale` accordingly:
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 ```
-
-### See also
-
-- [High-level overview of how this repo works (screencast)](https://youtu.be/__0Dquj7y9g).
-
-### License
-
-Unless otherwise noted, the contents of this repo are in the public domain. See the [LICENSE](LICENSE.md) for details.
-
-### Authors
-
-The repo is written and maintained by Greg Hurrell &lt;[greg@hurrell.net](mailto:greg@hurrell.net)&gt; Other contributors that have submitted patches include, in alphabetical order:
-
-- Joe Lencioni
-- Mark Stenglein
-- Victor Igor
-- Zac Collier
-
-This list produced with:
-
-    :read !git shortlog -s | grep -v 'Greg Hurrell' | cut -f 2-3 | sed -e 's/^/- /'
