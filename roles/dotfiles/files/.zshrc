@@ -310,10 +310,10 @@ zstyle ':chpwd:*' recent-dirs-default true
 LOCAL_RC=$HOME/.zshrc.local
 test -f $LOCAL_RC && source $LOCAL_RC
 
-DEV_RC=$HOME/.zsh/host/dev-star
-if [ $(hostname -s) =~ '^dev(vm)?[[:digit:]]+' ]; then
-  test -f $DEV_RC && source $DEV_RC
-fi
+# DEV_RC=$HOME/.zsh/host/dev-star
+# if [ $(hostname -s) =~ '^dev(vm)?[[:digit:]]+' ]; then
+#   test -f $DEV_RC && source $DEV_RC
+# fi
 
 HOST_RC=$HOME/.zsh/host/$(hostname -s)
 test -f $HOST_RC && source $HOST_RC
@@ -325,7 +325,6 @@ test -f $HOST_RC && source $HOST_RC
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=59'
 
-# Uncomment this to get syntax highlighting:
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #
@@ -339,5 +338,3 @@ if [ -e /etc/motd ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export GPG_TTY=$(tty)

@@ -7,8 +7,8 @@ tell application "System Events"
       click
       tell (menu item "Beats Solo³ tilhørende Mike Jakobsen" of menu 1)
         click
-        if exists menu item "Afbryd forbindelsen" of menu 1 then
-          click menu item "Afbryd forbindelsen" of menu 1
+        if exists menu item "Afbryd forbindelse" of menu 1 then
+          click menu item "Afbryd forbindelse" of menu 1
           return "Afbryder..."
         else
           click btMenu
