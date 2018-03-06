@@ -43,8 +43,8 @@ dotfile_templates:
   - .mutt/hooks/presync.sh
   - .notmuch-config
 
-git_user_email: '{{"greg@hurrell.net" if lookup("env", "USER") == "glh" else ""}}'
-git_user_name: '{{"Greg Hurrell" if lookup("env", "USER") == "glh" else ""}}'
+git_user_email: '{{"mike@jakobsen.dk" if lookup("env", "USER") == "glh" else ""}}'
+git_user_name: '{{"Mike Jakobsen" if lookup("env", "USER") == "glh" else ""}}'
 
 imap_nickname: ISP
 imap_server: imap.example.com

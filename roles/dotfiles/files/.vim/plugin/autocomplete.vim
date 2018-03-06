@@ -17,8 +17,7 @@ endif
 " Additional UltiSnips config.
 let g:UltiSnipsSnippetsDir = $HOME . '/.vim/ultisnips'
 let g:UltiSnipsSnippetDirectories = [
-      \ $HOME . '/.vim/ultisnips',
-      \ $HOME . '/.vim/ultisnips-private'
+      \ $HOME . '/.vim/ultisnips'
       \ ]
 
 if has('nvim')
@@ -34,3 +33,10 @@ if has('nvim')
 
   packadd! LanguageClient-neovim
 endif
+
+
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags

@@ -326,7 +326,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=59'
 
 # Uncomment this to get syntax highlighting:
-# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #
 # /etc/motd
@@ -337,3 +337,7 @@ if [ -e /etc/motd ]; then
     tee $HOME/.hushlogin < /etc/motd
   fi
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GPG_TTY=$(tty)

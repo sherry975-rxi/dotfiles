@@ -1,14 +1,14 @@
 ---
-corpus_notes: '{{ "~/Dropbox/Corpus" | expanduser }}'
+corpus_notes: '{{ "~/Notes" | expanduser }}'
 
-imap_nickname: Gmail
-imap_server: imap.gmail.com
-imap_user: greg@hurrell.net
-imap_keychain_account: greg+mutt@hurrell.net
-imap_keychain_name: gmail.com
+imap_nickname: Jubii
+imap_server: imap.jubii.dk
+imap_user: mike@jakobsen.dk
+imap_keychain_account: mike@jakobsen.dk
+imap_keychain_name: Jubii
 
-smtp_server: smtp.gmail.com
-smtp_from: greg@hurrell.net
-smtp_user: greg@hurrell.net
-smtp_keychain_account: greg+mutt@hurrell.net
-smtp_keychain_name: gmail.com
+smtp_server: smtp.jubii.dk
+smtp_from: mike@jakobsen.d😘k
+smtp_user: mike@jakobsen.dk
+smtp_keychain_account: mike@jakobsen.dk
+smtp_keychain_name: Jubii

@@ -226,3 +226,8 @@ function wr() {
     tmux switch-client -t WriteRoom
   fi
 }
+
+mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
+

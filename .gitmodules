@@ -154,3 +154,66 @@
 [submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-zsh"]
 	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-zsh
 	url = https://github.com/chrisbra/vim-zsh.git
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-dispatch"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/nvim-completion-manager"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/nvim-completion-manager
+	url = https://github.com/roxma/nvim-completion-manager
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-composer"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-composer
+	url = https://github.com/noahfrederick/vim-composer
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-laravel"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-laravel
+	url = https://github.com/noahfrederick/vim-laravel
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/emmet-vim"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/neocomplete.vim"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/neocomplete.vim
+	url = https://github.com/Shougo/neocomplete.vim
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/phpcomplete.vim"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/phpcomplete.vim
+	url = https://github.com/shawncplus/phpcomplete.vim
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/tern_for_vim"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/tern_for_vim
+	url = https://github.com/marijnh/tern_for_vim
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/typescript-vim"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/ale"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/ale
+	url = https://github.com/w0rp/ale
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-blade"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-blade
+	url = https://github.com/jwalton512/vim-blade
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-blade-directive"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-blade-directive
+	url = https://github.com/adriaanzon/vim-textobj-blade-directive
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-function"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-function
+	url = https://github.com/kana/vim-textobj-function
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-line"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-line
+	url = https://github.com/kana/vim-textobj-line
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-operator-replace"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-operator-replace
+	url = https://github.com/kana/vim-operator-replace
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-syntax"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-textobj-syntax
+	url = https://github.com/kana/vim-textobj-syntax
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/neoformat"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/neoformat
+	url = https://github.com/sbdchd/neoformat
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/neomake"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/neomake
+	url = https://github.com/benekastah/neomake
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/ncm-rct-complete"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/ncm-rct-complete
+	url = https://github.com/roxma/ncm-rct-complete
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-endwise"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-ragtag"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag
