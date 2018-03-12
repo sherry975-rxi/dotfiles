@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true,
+        "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -15,1055 +15,11 @@
                 },
                 "rules": [
                     {
-                        "description": "System-wide Vimium",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    }
-                                ],
+                                "description": "Change right option to Hyper (i.e., command+control+option+shift)",
                                 "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    },
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "h",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "l",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "home"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "end"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "b",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_up"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_down"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    },
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    },
-                                    {
-                                        "key_code": "down_arrow"
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "vk_none"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "g",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "g",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_shift"
-                                        ]
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "left_control"
-                                        ]
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "4",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock",
-                                            "shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "1",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "tab",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_shift"
-                                        ]
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "x",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "w",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "x",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "r",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": {
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "z",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "r",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "z",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "to_after_key_up": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium_g_tapped",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "any": "key_code",
+                                    "key_code": "right_option",
                                     "modifiers": {
                                         "optional": [
                                             "any"
@@ -1072,336 +28,12 @@
                                 },
                                 "to": [
                                     {
-                                        "set_variable": {
-                                            "name": "vimium_g_tapped",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_shift"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_control"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "right_control"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "vimium",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "any": "key_code",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "vk_none"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Use Return as Open",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.apple.finder"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "o",
+                                        "key_code": "left_shift",
                                         "modifiers": [
-                                            "right_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Use Return as Open and Use Fn+Return as Rename",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.apple.finder"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "return_or_enter",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.apple.finder"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "return_or_enter"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "o",
-                                        "modifiers": [
-                                            "right_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap LCommand + q to q in Safari only",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com.apple.Safari"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "q",
-                                    "modifiers": {
-                                        "mandatory": [
+                                            "left_control",
+                                            "left_option",
                                             "left_command"
                                         ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "q"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Launch apps by right shift+letters.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "a",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open '/Applications/Utilities/Activity Monitor.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open '/Applications/Dictionary.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "e",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open '/Applications/TextEdit.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "f",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open ~"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "s",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open '/Applications/Safari.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "caps_lock"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open '/Applications/Utilities/Terminal.app'"
                                     }
                                 ],
                                 "type": "basic"
@@ -1417,11 +49,63 @@
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
-                        "product_id": 632,
+                        "product_id": 276,
+                        "vendor_id": 4176
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 1031,
+                        "vendor_id": 4176
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 631,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 34304,
                         "vendor_id": 1452
                     },
                     "ignore": true,
-                    "manipulate_caps_lock_led": true,
+                    "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 0,
+                        "vendor_id": 0
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": []
                 }
             ],
@@ -1431,7 +115,7 @@
                         "key_code": "f1"
                     },
                     "to": {
-                        "consumer_key_code": "display_brightness_decrement"
+                        "key_code": "vk_consumer_brightness_down"
                     }
                 },
                 {
@@ -1439,7 +123,7 @@
                         "key_code": "f2"
                     },
                     "to": {
-                        "consumer_key_code": "display_brightness_increment"
+                        "key_code": "vk_consumer_brightness_up"
                     }
                 },
                 {
@@ -1447,7 +131,7 @@
                         "key_code": "f3"
                     },
                     "to": {
-                        "key_code": "mission_control"
+                        "key_code": "vk_mission_control"
                     }
                 },
                 {
@@ -1455,7 +139,7 @@
                         "key_code": "f4"
                     },
                     "to": {
-                        "key_code": "launchpad"
+                        "key_code": "vk_launchpad"
                     }
                 },
                 {
@@ -1463,7 +147,7 @@
                         "key_code": "f5"
                     },
                     "to": {
-                        "key_code": "illumination_decrement"
+                        "key_code": "vk_consumer_illumination_down"
                     }
                 },
                 {
@@ -1471,7 +155,7 @@
                         "key_code": "f6"
                     },
                     "to": {
-                        "key_code": "illumination_increment"
+                        "key_code": "vk_consumer_illumination_up"
                     }
                 },
                 {
@@ -1479,7 +163,7 @@
                         "key_code": "f7"
                     },
                     "to": {
-                        "consumer_key_code": "rewind"
+                        "key_code": "vk_consumer_previous"
                     }
                 },
                 {
@@ -1487,7 +171,7 @@
                         "key_code": "f8"
                     },
                     "to": {
-                        "consumer_key_code": "play_or_pause"
+                        "key_code": "vk_consumer_play"
                     }
                 },
                 {
@@ -1495,7 +179,7 @@
                         "key_code": "f9"
                     },
                     "to": {
-                        "consumer_key_code": "fastforward"
+                        "key_code": "vk_consumer_next"
                     }
                 },
                 {
@@ -1503,7 +187,7 @@
                         "key_code": "f10"
                     },
                     "to": {
-                        "consumer_key_code": "mute"
+                        "key_code": "mute"
                     }
                 },
                 {
@@ -1511,7 +195,7 @@
                         "key_code": "f11"
                     },
                     "to": {
-                        "consumer_key_code": "volume_decrement"
+                        "key_code": "volume_down"
                     }
                 },
                 {
@@ -1519,7 +203,7 @@
                         "key_code": "f12"
                     },
                     "to": {
-                        "consumer_key_code": "volume_increment"
+                        "key_code": "volume_up"
                     }
                 }
             ],
@@ -1528,7 +212,7 @@
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
-                "keyboard_type": "ansi"
+                "keyboard_type": "iso"
             }
         }
     ]

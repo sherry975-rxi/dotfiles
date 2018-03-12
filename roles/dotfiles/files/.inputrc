@@ -24,3 +24,7 @@ set output-meta
 
 # Do not convert 8-bit characters into ASCII key sequences.
 set convert-meta off
+
+"\e\e[C": forward-word
+"\e\e[D": backward-word
+

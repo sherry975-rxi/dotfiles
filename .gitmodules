@@ -217,3 +217,9 @@
 [submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-ragtag"]
 	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag
+[submodule "roles/dotfiles/files/.zsh/bin/hostsctl"]
+	path = roles/dotfiles/files/.zsh/bin/hostsctl
+	url = https://www.github.com/rcy/hostsctl
+[submodule "roles/dotfiles/files/.vim/pack/bundle/start/vim-db"]
+	path = roles/dotfiles/files/.vim/pack/bundle/start/vim-db
+	url = https://github.com/tpope/vim-db.git
