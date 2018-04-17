@@ -201,6 +201,7 @@ source $HOME/.zsh/functions
 source $HOME/.zsh/hash
 source $HOME/.zsh/path
 source $HOME/.zsh/vars
+source $HOME/.zsh/fzf-marks.plugin.zsh
 
 test -e $HOME/.zsh/functions.private && source $HOME/.zsh/functions.private
 
