@@ -13,6 +13,7 @@
 - repo: roman/golden-ratio
 - repo: wincent/command-t
 - repo: tpope/vim-sleuth
+- repo: tpope/vim-surround
 - repo: itchyny/vim-gitbranch
 - repo: itchyny/vim-parenmatch
 - repo: itchyny/vim-cursorword

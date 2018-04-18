@@ -26,3 +26,25 @@ sudo pmset -a sms 0
 # [10.9] Disable local Time Machine snapshots
 sudo tmutil disable
 sudo tmutil disablelocal
+
+# [10.9] Disable OSX Dock
+defaults write com.apple.dock autohide-delay -float 1000
+
+# [10.9] Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# [10.9] Disable Disk verification
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+
+# [10.9] Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Use scroll gesture with the Ctrl (^) modifier key to zoom
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+# Use Dark mode
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
