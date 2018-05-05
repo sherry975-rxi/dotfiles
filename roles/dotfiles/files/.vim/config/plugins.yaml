@@ -11,7 +11,9 @@
 - repo: christoomey/vim-tmux-navigator
 - repo: junegunn/vim-peekaboo
 - repo: roman/golden-ratio
-- repo: wincent/command-t
+- repo: junegunn/fzf
+- repo: wincent/ferret
+- repo: wincent/loupe
 - repo: tpope/vim-sleuth
 - repo: tpope/vim-surround
 - repo: itchyny/vim-gitbranch
