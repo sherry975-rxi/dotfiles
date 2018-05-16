@@ -11,7 +11,6 @@
 - repo: christoomey/vim-tmux-navigator
 - repo: junegunn/vim-peekaboo
 - repo: roman/golden-ratio
-- repo: junegunn/fzf
 - repo: wincent/ferret
 - repo: wincent/loupe
 - repo: tpope/vim-sleuth
@@ -258,13 +257,6 @@
 - repo: junegunn/limelight.vim
   if: empty($VIM_MINIMAL)
   on_cmd: Limelight
-
-- repo: itchyny/calendar.vim
-  if: empty($VIM_MINIMAL)
-  on_cmd: Calendar
-  hook_source: |
-    let g:calendar_google_calendar = 1
-    let g:calendar_google_task = 1
 
 - repo: vimwiki/vimwiki
   if: empty($VIM_MINIMAL)
