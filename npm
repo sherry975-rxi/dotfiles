@@ -1,0 +1,19 @@
+npm install -g \
+			castnow \
+			live-server \
+			now \
+			prettier \
+			standard \
+			prettier-standard \
+			diff-so-fancy \
+			eslint \
+			jshint \
+			jsxhint \
+			jsonlint \
+			stylelint \
+			sass-lint \
+			raml-cop \
+			markdownlint-cli \
+			write-good \
+			tern
+
