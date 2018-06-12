@@ -12,6 +12,7 @@
 - repo: junegunn/vim-peekaboo
 - repo: roman/golden-ratio
 - repo: wincent/ferret
+- repo: noahfrederick/vim-laravel
 - repo: wincent/loupe
 - repo: tpope/vim-sleuth
 - repo: tpope/vim-surround
