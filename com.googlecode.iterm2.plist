@@ -4948,7 +4948,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Dotfiles</string>
+	<string>~/dotfiles</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -4982,10 +4982,18 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>246 820 400 129 0 0 1920 1200 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 606 620 392 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>896 375 918 401 0 0 1920 1200 </string>
+	<string>269 122 796 473 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>68 557 640 539 0 0 1920 1200 </string>
+	<string>3 631 640 539 0 0 1920 1200 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>291 268 640 539 0 0 1920 1200 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>268 114 640 475 0 0 1920 1200 </string>
 	<key>NeverWarnAboutShortLivedSessions_F04B134F-101E-47DF-925A-8C1E1978DDD5</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_F04B134F-101E-47DF-925A-8C1E1978DDD5_selection</key>
@@ -10346,9 +10354,9 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>A1E4EE1D-C339-4948-A2E6-16B11AF485F9</string>
+	<string>40D4AA5F-678D-451B-AC3C-C167AA13636D</string>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>548420804.60443294</real>
+	<real>551213103.13194394</real>
 	<key>PasteSpecialChunkDelay</key>
 	<real>0.01</real>
 	<key>PasteSpecialChunkSize</key>
@@ -10393,7 +10401,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mike/Dotfiles</string>
+	<string>/Users/mike/dotfiles</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -10405,11 +10413,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=98</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=97</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-19T11:23:03Z</date>
+	<date>2018-06-23T07:17:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
