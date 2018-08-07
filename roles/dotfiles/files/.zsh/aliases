@@ -3,6 +3,7 @@
 #
 
 alias ....='cd ../..'
+alias ,=ranger
 alias :e=vim
 alias :qa=exit
 alias :sp='test -n "$TMUX" && tmux split-window'
@@ -104,6 +105,7 @@ if [ is_mac ]; then
   alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
   alias batt="pmset -g batt | sed '1d' | sed -e 's/-InternalBattery-0//' | awk '{\$1=\$1}1'"
   alias random="macchanger -r en0 && random-hostname"
-  alias update="sudo 𝚜𝚘𝚏𝚝𝚠𝚊𝚛𝚎𝚞𝚙𝚍𝚊𝚝𝚎 -𝚒 -a && brew update && brew upgrade"
+  alias update="sudo softwareupdate -a -i && brew update && brew upgrade"
   alias vimupdate="cd .vim && make"
+  alias ports="sudo lsof -i -P | grep -i "listen""
 fi

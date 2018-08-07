@@ -1,7 +1,3 @@
-#
-# Teh H4xx
-#
-
 if [ "$(uname)" = "Darwin" ]; then
   # Suppress unwanted Homebrew-installed stuff.
   if [ -e /usr/local/share/zsh/site-functions/_git ]; then
@@ -202,12 +198,9 @@ source $HOME/.zsh/hash
 source $HOME/.zsh/path
 source $HOME/.zsh/vars
 source $HOME/.zsh/fzf-marks.plugin.zsh
+source $HOME/.zsh/zsh-apple-touchbar/zsh-apple-touchbar.zsh
 
-test -e $HOME/.zsh/functions.private && source $HOME/.zsh/functions.private
 
-#
-# Third-party
-#
 
 CHRUBY=/usr/local/share/chruby
 test -e "$CHRUBY/chruby.sh" && . "$CHRUBY/chruby.sh"
