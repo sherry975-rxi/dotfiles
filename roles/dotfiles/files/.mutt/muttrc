@@ -1,4 +1,4 @@
-source $HOME/.mutt/config/aliases.mutt
+source $HOME/.mutt/config/mail.mutt
 source $HOME/.mutt/config/bindings.mutt
 source $HOME/.mutt/config/colors.mutt
 source $HOME/.mutt/config/commands.mutt

@@ -188,7 +188,7 @@ bindkey '^Z' fg-bg
 #
 # Other
 #
-
+source /usr/local/etc/profile.d/z.sh
 source $HOME/.zsh/aliases
 source $HOME/.zsh/common
 source $HOME/.zsh/colors

@@ -105,7 +105,14 @@ if [ is_mac ]; then
   alias ql='qlmanage -p 2>/dev/null' # OS X Quick Look
   alias batt="pmset -g batt | sed '1d' | sed -e 's/-InternalBattery-0//' | awk '{\$1=\$1}1'"
   alias random="macchanger -r en0 && random-hostname"
-  alias update="sudo softwareupdate -a -i && brew update && brew upgrade"
+  alias osxupdate="sudo softwareupdate -a -i && brew update && brew upgrade"
+  alias update-host="curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts"
   alias vimupdate="cd .vim && make"
   alias ports="sudo lsof -i -P | grep -i "listen""
+  alias scan='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s'
+  alias tap='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo'
+  alias sniff='sudo /usr/libexec/airportd en0 sniff'
+  alias setchannelto1='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --channel=2'
+  alias setchannelto2='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --channel=2'
+  alias setchannelto3='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --channel=3'
 fi

@@ -1,0 +1,16 @@
+set realname = "Mike Jakobsen"
+set from = "mike@jakobsen.dk"
+set use_from = yes
+set envelope_from = yes
+
+set smtp_pass = "jb3REnnw"
+set imap_user = "imap.jubii.dk"
+set imap_pass = "jb3REnnw"
+set spoolfile = "+INBOX"
+set ssl_force_tls = yes
+
+# G to get mail
+bind index G imap-fetch-mail
+set editor = "vim"
+set charset = "utf-8"
+set record = ''

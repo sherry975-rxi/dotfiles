@@ -45,4 +45,4 @@ base = ancestor(master, .)
 
 [ui]
 merge = internal:merge3
-username = Greg Hurrell <glh@fb.com>
+username = Mike Jakobsen <mike@jakobsen.dk>

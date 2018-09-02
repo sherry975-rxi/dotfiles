@@ -14,7 +14,6 @@
 --                            ** Requires **                            --
 -- -----------------------------------------------------------------------
 require "window-management"
-require "vox-control"
 require "vim-binding"
 require "key-binding"
 
