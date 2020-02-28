@@ -1,0 +1,11 @@
+dist: trusty
+sudo: required
+addons:
+  sonarcloud:
+    organization: "sherry975-rxi"
+    token:
+      secure: 6a59e72470c9e8d1c9968c064d86e267457651e2 # encrypted value of your token
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
